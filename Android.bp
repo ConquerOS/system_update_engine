@@ -134,6 +134,13 @@ cc_defaults {
         "libfec",
         "libselinux",
     ],
+    product_variables: {
+        debuggable: {
+            cflags: [
+                "-DRUN_BACKUPTOOL",
+            ],
+        },
+    },
 }
 
 cc_library_static {
